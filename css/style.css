@@ -191,3 +191,8 @@ video { /*Домашнее задание День 3 */
 .modal__input {
   width: 75%;
 }
+input, button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
