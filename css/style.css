@@ -134,13 +134,12 @@ a {
   }
   .button-submit {
     display: none;
-    background: #EA6E20;
   }
   .modal__input {
     max-width: 55%;
   }
   .form-input-group {
-
+    vertical-align: middle;
   }
 }
 video { /*Домашнее задание День 3 */
@@ -166,6 +165,7 @@ video { /*Домашнее задание День 3 */
   height: 14px;
 }
 .form-input-group {
+  display: flex;
   justify-content: space-between;
   align-items: center;
 }
@@ -186,7 +186,7 @@ video { /*Домашнее задание День 3 */
 }
 .modal__submit {
   background: #EA6E20;
-  vertical-align: center;
+  padding-top: px;
 }
 .modal__label {
   margin-right: 20px;
