@@ -160,9 +160,32 @@ a {
   }
 }
 
-@supports (-webkit-touch-callout: none) {
+@media (max-height: 576px),
+screen and (orientation: portrait) {
+  #send-button-ios {
+    background: transparent;
+    padding-top: 4px;
+  }
+  #a-submit-button {
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
 
+@media (max-height: 900px),
+screen and (orientation: landscape) {
+  #submit-text-ios {
+    background: transparent;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
   /* CSS specific to iOS devices */
+/* @supports (-webkit-touch-callout: none) {
   #send-button-ios {
     background: transparent;
     padding-top: 4px;
@@ -186,7 +209,7 @@ a {
   #a-submit-button {
     background: transparent;
   }
-}
+} */
 
 @media (max-width: 373px) {}
 
