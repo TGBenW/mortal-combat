@@ -137,13 +137,10 @@ a {
 
 @supports (-webkit-touch-callout: none) {
   /* CSS specific to iOS devices */
-  .modal__submit {
-    background: transparent;
-  }
-  .button-submit {
-    background: transparent;
-  }
   #send-button-ios {
+    background: transparent;
+  }
+  #a-submit-button {
     background: transparent;
   }
 }
