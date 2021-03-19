@@ -114,9 +114,7 @@ a {
   .film-logo {
     max-width: 100%;
   }
-  .modal__input {
-    max-width: 50%;
-  }
+
 }
 @media (max-width: 576px) {
   .button-text {
@@ -129,18 +127,15 @@ a {
     padding-bottom: 350px;
     background-size: 300px;
   }
-  .button {
-    margin-bottom: 10px;
+  #button-prime {
+    margin-bottom: 20px;
   }
   .button-submit {
     display: none;
   }
-  .modal__input {
-    max-width: 55%;
-  }
-  .form-input-group {
-    vertical-align: middle;
-  }
+}
+@media (max-width: 373px) {
+  
 }
 video { /*Домашнее задание День 3 */
   position: fixed;
@@ -166,8 +161,8 @@ video { /*Домашнее задание День 3 */
 }
 .form-input-group {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: center;
 }
 
 .visually-hidden {
@@ -186,11 +181,13 @@ video { /*Домашнее задание День 3 */
 }
 .modal__submit {
   background: #EA6E20;
-  padding-top: px;
 }
 .modal__label {
   margin-right: 20px;
 }
 .modal__title {
   max-width: 400px;
+}
+.modal__input {
+  width: 75%;
 }
