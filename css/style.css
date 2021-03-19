@@ -181,6 +181,7 @@ video { /*Домашнее задание День 3 */
 }
 .modal__submit {
   background: #EA6E20;
+  -webkit-appearance: none;
 }
 .modal__label {
   margin-right: 20px;
