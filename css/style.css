@@ -134,6 +134,7 @@ a {
   }
   .button-submit {
     display: none;
+    background: #EA6E20;
   }
   .modal__input {
     max-width: 55%;
@@ -163,7 +164,6 @@ video { /*Домашнее задание День 3 */
 .button-icon-send {
   width: 14px;
   height: 14px;
-  align: right;
 }
 .form-input-group {
   justify-content: space-between;
@@ -186,6 +186,7 @@ video { /*Домашнее задание День 3 */
 }
 .modal__submit {
   background: #EA6E20;
+  vertical-align: center;
 }
 .modal__label {
   margin-right: 20px;
