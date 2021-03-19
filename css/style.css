@@ -114,6 +114,9 @@ a {
   .film-logo {
     max-width: 100%;
   }
+  .modal__input {
+    max-width: 50%;
+  }
 }
 @media (max-width: 576px) {
   .button-text {
@@ -129,6 +132,15 @@ a {
   .button {
     margin-bottom: 10px;
   }
+  .button-submit {
+    display: none;
+  }
+  .modal__input {
+    max-width: 55%;
+  }
+  .form-input-group {
+
+  }
 }
 video { /*Домашнее задание День 3 */
   position: fixed;
@@ -137,4 +149,47 @@ video { /*Домашнее задание День 3 */
   bottom: 0;
   min-width: 100%;
   min-height: 100%;
+}
+
+.modal {
+  display: none;
+  max-width: 600px;
+  padding: 0 0px 0 0;
+  text-align: justify;
+  border-radius: 5px;
+  opacity: 0.8;
+  background: #e2dfdd;
+}
+.button-icon-send {
+  width: 14px;
+  height: 14px;
+  align: right;
+}
+.form-input-group {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.visually-hidden {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px);
+  /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
+}
+.email-form {
+  margin: 25px;
+}
+.modal__submit {
+  background: #EA6E20;
+}
+.modal__label {
+  margin-right: 20px;
+}
+.modal__title {
+  max-width: 400px;
 }
