@@ -182,34 +182,9 @@ screen and (orientation: landscape) {
     display: flex;
     align-items: center;
     justify-content: center;
+    line-height: 20px;
   }
 }
-  /* CSS specific to iOS devices */
-/* @supports (-webkit-touch-callout: none) {
-  #send-button-ios {
-    background: transparent;
-    padding-top: 4px;
-  }
-
-  #a-submit-button {
-    background: transparent;
-  }
-
-  #submit-text-ios {
-    background: transparent;
-    color: black;
-    padding-bottom: 4px;
-  }
-
-  #send-button-ios {
-    background: transparent;
-    padding-top: 4px;
-  }
-
-  #a-submit-button {
-    background: transparent;
-  }
-} */
 
 @media (max-width: 373px) {}
 
