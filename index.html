@@ -8,7 +8,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+  <link rel="stylesheet" href="css\jquery.fancybox.min.css" />
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -38,7 +38,7 @@
       <!-- /.tags -->
       <p class="description">Продолжение легендарного фильма из 90-х. Предстоит по-настоящему смертельная битва, где останется только сильнейший</p>
       <div class="button-group">
-        <button class="button button-primary">Предзаказ фильма</button>
+        <button data-fancybox href="#modal" class="button button-primary">Предзаказ фильма</button>
         <a data-fancybox href="https://youtu.be/1ar_V1_uatA" class="button button-default">
           <img src="img/play.svg" alt="icon: play" class="button-icon">
           <span class="button-text">Смотреть трейлер</span>
@@ -47,11 +47,26 @@
       <!-- /.button-group -->
     </section>
   </div>
-
+  <div class="modal" id="modal">
+    <form class="email-form" action="">
+			<input type="text" class="modal__title-submit visually-hidden" name="name-good" value="Введите Ваш e-mail чтобы получить уведомление о возможности предзаказа" disabled> 
+			<h3 class="modal__title">Введите Ваш e-mail чтобы получить уведомление о возможности предзаказа</h3>
+      <div class="form-input-group">
+        <label class="modal__label">
+          <input class="modal__label modal__input" type="text" placeholder="kino@pulse.ru" maxlength="20" size="20" required>
+        </label>
+        <a type="submit" class="button modal__submit">
+          <img src="img/send.svg" alt="icon: send" class="button-icon-send">
+          <span class="button modal__submit button-submit">Подписаться</span>
+        </a>
+      </div>
+		</form>
+  </div>
   <!-- Домашнее задание День 3
   <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
   <script src="js/jquery.vide.min.js"></script> -->
-  <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+	<script src="js\jquery.fancybox.min.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>
