@@ -325,9 +325,30 @@ video {
   max-width: 600px;
 /*   padding: 0 0px 0 0; */
   text-align: justify;
-  border-radius: 5px;
-  opacity: 0.8;
-  background: #e2dfdd;
+  /* opacity: 0.8; */
+  /* background: #e2dfdd; */
+  color: rgb(255, 255, 255);
+  background: #01020220;
+}
+
+div.modal {
+  --angle: 0deg;
+  border: 5px solid;
+  border-image: conic-gradient(from var(--angle), rgb(17, 6, 163), rgb(33, 62, 192), rgb(62, 152, 187), rgb(138, 194, 211), rgb(247, 192, 4), rgb(207, 120, 49), rgb(160, 74, 3), rgb(17, 6, 163)) 1;
+
+  animation: 3s rotate linear infinite;
+}
+
+@keyframes rotate {
+  to {
+    --angle: 360deg;
+  }
+}
+
+@property --angle {
+  syntax: '<angle>';
+  initial-value: 0deg;
+  inherits: false;
 }
 
 /* .form-input-group {
