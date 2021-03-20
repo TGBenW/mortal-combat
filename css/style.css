@@ -222,12 +222,24 @@ screen and (orientation: portrait) {
   #submit-text-ios {
     display: none;
   }
-  .modal__label {
-    border-color: red;
+  .description {
+    text-align: justify;
   }
-  .modal__input {
-    border-color: blue;
-    /* width: 250px; */
+  .button-group {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+  .button-primary {
+    order: 1;
+    flex-grow: 1;
+  }
+  .button-default {
+    order: 2;
+    flex-grow: 0;
   }
 }
 
@@ -239,7 +251,7 @@ screen and (orientation: portrait) {
   justify-content: flex-end;
   align-items: baseline;
 }
-.modal__label {
+.modal__input {
   order: 1;
   flex-grow: 1;
 }
@@ -254,7 +266,7 @@ screen and (orientation: portrait) {
 }
 
 .modal__submit {
-  padding: 2px 2px;
+  padding: 2px 0px;
   vertical-align: text-bottom;
   display: flex;
   flex-direction: row;
@@ -266,13 +278,15 @@ screen and (orientation: portrait) {
 .button-icon {
   order: 1;
   flex-grow: 1;
-  margin-top: 2px;
+  padding-top: 7px;
   height: 16px;
   width: 16px;
 }
 .button-submit {
   order: 2;
-  flex-grow: 3;
+  flex-grow: 0;
+  margin-right: 5px;
+  margin-bottom: 2px;
 }
 
 /* @media (max-width: 374px) {
