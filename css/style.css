@@ -254,6 +254,7 @@ screen and (orientation: portrait) {
 .modal__input {
   order: 1;
   flex-grow: 1;
+  background: #E5E5E5;
 }
 .spacer {
   order: 2;
@@ -263,6 +264,7 @@ screen and (orientation: portrait) {
 .modal__submit {
   order: 3;
   flex-grow: 1;
+  color: black;
 }
 
 .modal__submit {
@@ -327,7 +329,7 @@ video {
   text-align: justify;
   /* opacity: 0.8; */
   /* background: #e2dfdd; */
-  color: rgb(255, 255, 255);
+  color: #E5E5E5;
   background: #01020220;
 }
 
@@ -378,7 +380,7 @@ div.modal {
 }
 
 .modal__submit {
-  background: #EA6E20;
+  background: #E5E5E5;
 }
 
 /* .modal__label {
