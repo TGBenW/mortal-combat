@@ -406,6 +406,10 @@ div.modal {
 #special-button-a {
   background: #E5E5E5;
   color: black;
+  order: 2;
+  flex-grow: 0;
+  padding: 1px 21px;
+
 }
 
 #special-button-span {
