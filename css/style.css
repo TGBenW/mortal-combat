@@ -177,6 +177,46 @@ a {
   }
 }
 
+@supports (-webkit-touch-callout: none) {
+
+  /* CSS specific to iOS devices */
+  @media (max-width: 335px),
+  screen and (orientation: portrait) {
+    .modal__label {
+      background: red;
+      color: red;
+      width: 300px;
+    }
+
+    .modal__input {
+      background: red;
+      color: red;
+      width: 300px;
+    }
+    .form-input-group {
+      background: red;
+      color: red;
+      width: 300px;
+    }
+  }
+}
+@media (max-width: 335px),
+screen and (orientation: portrait) {
+  /* .modal__label {
+    background: red;
+    color: red;
+    width: 300px;
+  } */
+
+  .modal__input {
+    width: 180px;
+  }
+
+  .form-input-group {
+    width: 258px;
+  }
+}
+
 @media (max-height: 385px),
 screen and (orientation: portrait) {
   .button-icon {
@@ -212,6 +252,7 @@ screen and (orientation: portrait) {
       justify-content: center;
       line-height: 20px;
     }
+
     .button-icon {
       background: transparent;
     }
@@ -406,8 +447,6 @@ div.modal {
 #special-button-a {
   background: #E5E5E5;
   color: black;
-  order: 2;
-  flex-grow: 0;
   padding: 1px 21px;
 
 }
